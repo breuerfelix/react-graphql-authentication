@@ -44,7 +44,7 @@ class SignupModal extends React.Component {
         };
     }
 
-    submit = () => {};
+    submit = async e => {};
 
     render() {
         const show = 'show';
@@ -65,7 +65,9 @@ class SignupModal extends React.Component {
                 <div class="modal-background" />
                 <div class="modal-card">
                     <header class="modal-card-head">
-                        <p class="modal-card-title">Get your free Account here!</p>
+                        <p class="modal-card-title">
+                            Get your free Account here!
+                        </p>
                         <button
                             class="delete"
                             aria-label="close"
@@ -91,7 +93,9 @@ class SignupModal extends React.Component {
                                     placeholder="Choose a Username"
                                     value={this.state.username}
                                     onChange={e => {
-                                        this.setState({ username: e.target.value });
+                                        this.setState({
+                                            username: e.target.value
+                                        });
                                     }}
                                 />
                                 <span class="icon is-small is-left">
@@ -109,7 +113,9 @@ class SignupModal extends React.Component {
                                     placeholder="Enter your Email"
                                     value={this.state.email}
                                     onChange={e => {
-                                        this.setState({ email: e.target.value });
+                                        this.setState({
+                                            email: e.target.value
+                                        });
                                     }}
                                 />
                                 <span class="icon is-small is-left">
@@ -130,7 +136,9 @@ class SignupModal extends React.Component {
                                     placeholder="Password must be at least 8 characters long"
                                     value={this.state.password}
                                     onChange={e => {
-                                        this.setState({ password: e.target.value });
+                                        this.setState({
+                                            password: e.target.value
+                                        });
                                     }}
                                 />
                                 <span class="icon is-small is-left">
@@ -143,14 +151,17 @@ class SignupModal extends React.Component {
                                     class="button is-outlined"
                                     onClick={() => {
                                         this.setState({
-                                            passwordVisible: !this.state.passwordVisible
+                                            passwordVisible: !this.state
+                                                .passwordVisible
                                         });
                                     }}
                                 >
                                     <i
                                         class={classnames('fas', {
-                                            'fa-eye': this.state.passwordVisible,
-                                            'fa-eye-slash': !this.state.passwordVisible
+                                            'fa-eye': this.state
+                                                .passwordVisible,
+                                            'fa-eye-slash': !this.state
+                                                .passwordVisible
                                         })}
                                     />
                                 </a>

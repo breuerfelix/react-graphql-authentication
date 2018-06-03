@@ -1,12 +1,11 @@
 {
-    "users": [
-        {
-            "username": "test",
-            "password":
-                "$2b$10$L72HnDgRvpS9N87iuTdZcewJMNmNFeep21HCgnFU0hv6b/FoXI36.",
-            "email": "test@test.de",
-            "gender": "male",
-            "iat": 1527948530
-        }
-    ]
+  "users": [
+    {
+      "username": "test",
+      "password": "$2b$10$L72HnDgRvpS9N87iuTdZcewJMNmNFeep21HCgnFU0hv6b/FoXI36.",
+      "email": "test@test.de",
+      "gender": "male",
+      "iat": 1527948530
+    }
+  ]
 }

@@ -54,10 +54,12 @@ const resolver = {
                     throw new Error('Password is incorrect!');
                 }
             } else {
-                throw new Error('Username does no exist!');
+                throw new Error('Username does not exist!');
             }
         },
-        signup: (obj, { username, email, password }) => {},
+        signup: async (obj, { username, email, password }) => {
+            return await userDB.addUser(username, email, password);
+        },
         verifyToken: async (obj, { token }) => {
             try {
                 const decoded = jwt.decode(token);
