@@ -4,5 +4,3 @@ package-lock.json
 node_modules
 dist
 fileDatabase
-databaseUser.json
-server/src/config.js
